@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>mentoring session assign</title>
+</head>
+<body>
+  <form class="search_and_sort">
+    <div class="left">
+       Search by Pan Number:<input class="search" type="text" placeholder="Enter Pan Number" />
+       <!-- <i class="fa-solid fa-xmark"></i> -->
+
+    </div>
+    <div class="right">
+      Sort Data:
+      <select class="sort_array">
+        <option class="normal">normal</option>
+        <option value="A-Z" class="AtoZ">A to Z</option>
+        <option value="Z-A" class="ZtoA">Z to A</option>
+      </select>
+  </div>
+  </form>  
+  <form class="candidate_data">
+    Name:<input type="text" placeholder="your name" class="name">
+    Pan No.:<input type="text" placeholder="Id Number" class="pan_no">
+    Age:<input type="number" placeholder="age" class="age">
+    Highest Qualification:<input type="text" placeholder="qualification" class="high_quali">
+    <input type="submit" class="submit_btn btn">
+  </form>
+  <div class="error_input error"></div>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>PAN number</th>
+        <th>Age</th>
+        <th>Qualification</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="table_body">
+      <tr class="personDetails">
+        <td>Kunal</td>
+        <td class="pan">BMAPT1467K</td>
+        <td>27</td>
+        <td>BE</td>
+        <td>
+          <button class="del-btn btn">Delete</button>
+          <button class="edit-btn btn">Edit</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+
+<script src="app.js"></script>  
+</body>
+</html>
